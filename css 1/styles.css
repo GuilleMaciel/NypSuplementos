@@ -36,13 +36,18 @@ img {
 .menu {
     background-color:  #2596be;
     list-style: none;
-    padding: 4px;
+    padding: 3px;
+    margin: 3px;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     font-weight: bold;
 }
+
+
 
 .menu li a{
     text-decoration: none;
@@ -165,19 +170,6 @@ input[type='reset'] {
     height: 480px;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    height: 70px;
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.baja {
-    position: relative;
-    bottom: -15px;
-}
-
 /*Inicio*/
 
 .contenedor{
@@ -235,8 +227,6 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin-top: 5px;
-    margin-bottom: -60px;
     background-color: #333;
     width: 100%;
     height: 100vh;
@@ -307,9 +297,11 @@ footer {
 
 /*Guía de Suplementos*/
 
-.guia{
+.guia {
     background: rgb(36, 35, 35);
     text-align: center;
+    color: white;
+    font-size: 17px;
 }
 
 .guia h2 {
@@ -317,7 +309,8 @@ footer {
     font-weight: bold;
     font-size: 28px;
     display: block;
-    padding-top: 15px;
+    padding-top: 25px;
+    
 }
 
 .guia h3 {
@@ -325,12 +318,21 @@ footer {
     font-size: 24px;
 }
 
-.guia a {
+footer {
+    background-color: #333;
     color: white;
-    font-size: 17px;
+    height: 78px;
+    margin-top: 3px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
+.baja {
+    position: relative;
+    bottom: -15px;
+    text-decoration: none;
+    color: white;
+}
 /*
 .footer{
     display: -webkit-flex;
