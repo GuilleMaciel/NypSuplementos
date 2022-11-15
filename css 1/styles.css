@@ -11,6 +11,7 @@ body {
     
 }
 
+
 img {
     max-width: 100%;
 }
@@ -353,10 +354,15 @@ input[type='reset'] {
 footer {
     background-color: #333;
     color: white;
+    cursor: default;
     height: 78px;
     margin-top: 3px;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer a:hover {
+    color: white;
 }
 
 .baja {
