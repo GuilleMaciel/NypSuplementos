@@ -33,6 +33,32 @@ img {
     width: 100%;
 }
     
+
+#navbarNav {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbarNav li a {
+    text-decoration: none;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: block;
+}
+
+#navbarNav li a:hover {
+    background-color: #2596be;
+    color: black;
+}
+
+
+/*
 .menu {
     background-color:  #2596be;
     list-style: none;
@@ -72,6 +98,7 @@ img {
     height: 25px;
     padding: 0;
 }
+*/
 
 .background-img .form-contact {
     display: flex;
