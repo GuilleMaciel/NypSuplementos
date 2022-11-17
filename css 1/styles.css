@@ -6,6 +6,21 @@
     box-sizing: border-box;
 }
 
+
+header {
+    width: 100%;
+    background: white;
+    overflow: hidden;
+    color: white;
+}
+
+header span {
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    padding: 2.5rem;
+}
+
 body {
     background-color: white;
     
@@ -157,20 +172,6 @@ img {
         font-size: 23px;
 }
 
-header {
-    width: 100%;
-    background: white;
-    overflow: hidden;
-    color: white;
-}
-
-header span {
-    font-size: 100px;
-    display: block;
-    text-align: center;
-    padding: 2.5rem;
-}
-
 .contact {
     padding: .8rem;
     overflow: hidden;
@@ -198,6 +199,26 @@ header span {
 .contact textarea {
     min-height: 100px;
 }
+
+@media (max-width: 1200px) {
+    .form-contact {
+        top: 460px;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-contact {
+        width: 550px;
+    }
+}
+
+@media (max-width: 576px) {
+    .form-contact {
+        width: 400px;
+    }
+}
+
+
 
 input[type='submit'] {
     padding: 10px;
@@ -230,6 +251,7 @@ input[type='reset'] {
     position: relative;
     display: inline-block;
     text-align: center;
+    
 }
 
 .centrado{
@@ -267,6 +289,61 @@ input[type='reset'] {
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-shadow: -3px -3px 3px #0000DF, 3px -3px 3px #0000DF, -3px 3px 3px #0000DF, 3px 3px 3px #0000DF;
+    
+}
+
+@media (max-width: 1200px) {
+    .centrado {
+        font-size: 29px;
+    }
+    .centrado-2 {
+        font-size: 19px;
+    }
+    .centrado-3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 900px) {
+    .centrado {
+        font-size: 26px;
+    }
+    .centrado-2 {
+        font-size: 16px;
+    }
+    .centrado-3 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .centrado {
+        font-size: 20px;
+        top: 45px;
+    }
+    .centrado-2 {
+        font-size: 16px;
+        top: 90px;
+    }
+    .centrado-3 {
+        font-size: 14px;
+    }
+    .img-centrado {
+        height: 300px;
+    }
+}
+    
+
+@media (max-width: 576px) {
+    .centrado {
+        font-size: 18px;
+    }
+    .centrado-2 {
+        font-size: 15px;
+    }
+    .centrado-3 {
+        font-size: 13px;
+    }
 }
 
 /*Suplementos y indumentaria*/
