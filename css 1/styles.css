@@ -26,14 +26,41 @@ img {
     position: absolute;
     top: -23px;
     z-index: 1;
-    
+}
+
+@media (max-width: 1200px) {
+    .img-encima {
+        top: -37px;
+        width: 240px;
+    }
+}
+
+@media (max-width: 900px) {
+    .img-encima {
+        top:-35px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-encima {
+        top:-33px;
+        width: 170px;
+    }
+}
+
+@media (max-width: 576px) {
+    .img-encima {
+        top:-25px;
+        width: 140px;
+    }
 }
 
 .img-debajo {
     max-width: 100%;
     width: 100%;
-}
     
+}
 
 #navbarNav {
     display: flex;
@@ -57,7 +84,6 @@ img {
     background-color: #2596be;
     color: black;
 }
-
 
 /*
 .menu {
@@ -350,6 +376,8 @@ input[type='reset'] {
     color: #2596be;
     font-size: 24px;
 }
+
+
 
 footer {
     background-color: #333;
