@@ -6,102 +6,13 @@
     box-sizing: border-box;
 }
 
-.header {
-    background: #222;
-    height: 60px;
+
+header {
     width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 1;
+    background: white;
+    overflow: hidden;
+    color: white;
 }
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-}
-
-.img-logo {
-    height: 50px;
-    width: 50px;
-    margin: 5px 30px;
-    line-height: 60px;  
-    border-radius: 50%;
-}
-
-
-.nav-links {
-    color: #fff;
-    text-decoration: none;
-}
-
-.nav-ul {
-    display: flex;
-    margin-right: 40px;
-    list-style: none;
-}
-
-.nav-ul-item {
-    font-size: 17px;
-    margin: 0 10px;
-    line-height: 60px;
-    text-transform: uppercase;
-    width: max-content;
-}
-
-.nav-ul-item i {
-    font-size: 17px;
-    margin-right: 5px;
-}
-
-.nav-li-link {
-    padding: 8px 10px;
-    border-radius: 4px;
-}
-
-.nav-li-link:hover {
-    background: #333;
-    color: #FFF5EB;
-}
-
-/* RESPONSIVE NABVAR */
-
-.navbar {
-    display: none;
-}
-
-.h2-mobile {
-    display: none;
-}
-
-.cd-inicio-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 35px;
-    margin-bottom: 60px;
-}
-
-.cd-inicio {
-    background-color: #212529;
-    width: 500px;
-    height: 400px;
-    border-radius: 6px;
-}
-
-.cd-inicio img {
-    width: 500px;
-    height: 340px;
-    border-radius: 6px;
-    object-fit: cover;
-}
-
-.cd-inicio-h5 {
-    text-align: center;
-    padding-top: 10px;
-}
-
 
 header span {
     font-size: 100px;
@@ -120,6 +31,30 @@ img {
     max-width: 100%;
 }
 
+
+#navbarNav {
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    height: 30px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbarNav li a {
+    text-decoration: none;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: block;
+}
+
+#navbarNav li a:hover {
+    background-color: #2596be;
+    color: black;
+}
 
 /*
 .menu {
