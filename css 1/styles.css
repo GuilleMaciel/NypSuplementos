@@ -8,7 +8,7 @@
 
 
 header {
-    width: 100%;
+    max-width: 100%;
     background: white;
     overflow: hidden;
     color: white;
@@ -35,7 +35,6 @@ img {
 #navbarNav {
     display: flex;
     justify-content: center;
-    z-index: 10;
     height: 30px;
     letter-spacing: 1px;
     font-weight: 500;
@@ -54,6 +53,10 @@ img {
 #navbarNav li a:hover {
     background-color: #2596be;
     color: black;
+}
+
+.navbar-toggler {
+    
 }
 
 /*
