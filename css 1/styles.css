@@ -55,9 +55,33 @@ img {
     color: black;
 }
 
-.navbar-toggler {
+
+@media (max-width: 991px) {
+    header {
+        position: fixed, top;
+    }
+
+    .collapse {
+        height: 160px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    .navbar-toggler-icon {
+        display: inline-block;
+        max-width: 10vh;
+        max-height: 10vh;
+    }
+}
+
+@media (max-width: 768px) {
     
 }
+
+@media (max-width: 576px) {
+    
+}
+
 
 /*
 .menu {
