@@ -185,7 +185,7 @@ img {
 
 @media (max-width: 1200px) {
     .form-contact {
-        top: 460px;
+        top: 407px;
     }
 }
 
@@ -198,6 +198,7 @@ img {
 @media (max-width: 576px) {
     .form-contact {
         width: 400px;
+        
     }
 }
 
