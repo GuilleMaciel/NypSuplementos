@@ -82,21 +82,11 @@
 }
 
 input[type='submit'] {
-    padding: 10px;
-    background: #2596be;
-    border: none;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
+    @include inputcito;
 }
 
 input[type='reset'] {
-    padding: 10px;
-    background: #2596be;
-    border: none;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
+    @include inputcito;
 }
 
 .content {

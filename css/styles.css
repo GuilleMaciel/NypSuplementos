@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*Mixin*/
+/*MIXIN*/
 /*Formulario de contacto*/
 .background-img .form-contact {
   display: flex;
@@ -280,47 +280,41 @@ img {
   }
 }
 /*Inicio*/
-.contenedor {
-  position: relative;
-  display: inline-block;
-  text-align: center;
+/*EXTENDS*/
+.centrado-common, .centrado-3, .centrado-2, .centrado {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .centrado {
-  position: absolute;
   top: 32%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
   font-size: 45px;
-  font-weight: bold;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif, Georgia, Times, "Times New Roman", serif;
-  -webkit-text-stroke: 1px;
   text-shadow: -3px -3px 3px #2596be, 3px -3px 3px #2596be, -3px 3px 3px #2596be, 3px 3px 3px #2596be;
 }
 
 .centrado-2 {
-  position: absolute;
   top: 44%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
   font-size: 32px;
-  font-weight: bold;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-shadow: -3px -3px 3px #2596be, 3px -3px 3px #2596be, -3px 3px 3px #2596be, 3px 3px 3px #2596be;
 }
 
 .centrado-3 {
-  position: absolute;
   top: 63%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
   font-size: 25px;
-  font-weight: bold;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-shadow: -3px -3px 3px #0000DF, 3px -3px 3px #0000DF, -3px 3px 3px #0000DF, 3px 3px 3px #0000DF;
+}
+
+/*FIN EXTENDS*/
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
 }
 
 @media (max-width: 1200px) {
