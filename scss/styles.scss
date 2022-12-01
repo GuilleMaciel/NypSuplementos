@@ -1,4 +1,11 @@
-/*Principalissimo*/ 
+@import "variables";
+
+@import "contactanos";
+@import "footer";
+@import "guiasuplementos";
+@import "suplementoseindumentaria";
+
+/*CSS Principal*/
 
 * {
     margin: 0;
@@ -10,25 +17,26 @@ header {
     max-width: 100%;
     background: white;
     overflow: hidden;
-    color: white;
-}
+    color: $color-header;
 
-header span {
-    font-size: 100px;
-    display: block;
-    text-align: center;
-    padding: 2.5rem;
+    span {
+        font-size: 100px;
+        display: block;
+        text-align: center;
+        padding: 2.5rem;
+    }
 }
 
 body {
-    background-color: white;
+    background-color: $bg-body;
     
 }
-
 
 img {
     max-width: 100%;
 }
+
+
 
 /*NavBar*/
 
@@ -40,19 +48,20 @@ img {
     font-weight: 500;
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
-}
 
-#navbarNav li a {
+    li a {
     text-decoration: none;
     padding: 15px;
     padding-left: 30px;
     padding-right: 30px;
     display: block;
-}
 
-#navbarNav li a:hover {
+    :hover {
     background-color: #2596be;
     color: black;
+
+        }
+    }
 }
 
 
@@ -81,153 +90,6 @@ img {
 @media (max-width: 576px) {
     
 }
-
-
-/*
-.menu {
-    background-color:  #2596be;
-    list-style: none;
-    padding: 3px;
-    margin: 3px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    font-weight: bold;
-}
-
-
-
-.menu li a{
-    text-decoration: none;
-    color: black;
-    padding: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
-    display: block;
-}
-
-.menu li{
-    display: inline-block;
-    text-align: center;
-}
-
-.menu li a:hover{
-    background: white;
-}
-
-.menu li img{
-    width: 25px;
-    height: 25px;
-    padding: 0;
-}
-*/
-
-/*Formulario de contacto*/
-
-.background-img .form-contact {
-    display: flex;
-    justify-content: center;
-}
-
-.background-img{
-    background-image: url('../img/FONDO\ GENERAL.jpg');
-    background-size: cover, contain;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    height: 800px;
-    
-}
-
-.form-contact {
-    background: #FFF;
-    width: 600px;
-    position: absolute; right: 0;
-    top: 65%;
-    left: 50%;
-    padding-top: 20px;
-    transform: translate(-50%, -50%);
-    box-shadow: 7px 13px 37px rgba(0, 0, 0, .8);
-    font-family: Arial, Helvetica, sans-serif;
-    max-width: 100%;
-}
-
-.form-contact h2 {
-        font-size: 23px;
-}
-
-.contact {
-    padding: .8rem;
-    overflow: hidden;
-    color: gray;
-}
-
-.contact label, .contact input, .contact textarea {
-    display: block;
-    width: 100%;
-    margin-bottom: 5px;   
-}
-
-.contact label {
-    font-weight: 700;
-}
-
-.contact input:not([type='submit']), .contact textarea {
-    border: none;
-    border-bottom: 2px solid #2596be;
-    margin-bottom: 10px;
-    font-size: 20px;
-    outline: none;
-}
-
-.contact textarea {
-    min-height: 100px;
-}
-
-@media (max-width: 1000px) {
-    .form-contact {
-        margin-top: 180px;
-    }
-}
-
-@media (max-width: 768px) {
-    .form-contact {
-        width: 550px;
-    }
-}
-
-@media (max-width: 576px) {
-    .form-contact {
-        width: 400px;
-        
-    }
-}
-
-input[type='submit'] {
-    padding: 10px;
-    background: #2596be;
-    border: none;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-input[type='reset'] {
-    padding: 10px;
-    background: #2596be;
-    border: none;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.content {
-    width:100%;
-    height: 480px;
-}
-
 
 /*Inicio*/
 
@@ -329,155 +191,3 @@ input[type='reset'] {
         font-size: 13px;
     }
 }
-
-/*Suplementos y indumentaria*/
-
-:root{
-    --color1:#2596be;
-    --color2:#2596be;
-    --color3:#2596be;
-}
-
-.box-cards{
-    height: 500px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    background-color: #333;
-    width: 100%;
-    height: 100vh;
-}
-
-.box-cards .box{
-    background-color: rgb(138, 135, 135);
-    height: 500px;
-    width: 70%;
-    margin-top: 40px;
-    color: rgb(254, 254, 254);
-}
-
-.box img{
-    height: 450px;
-    width: 100%;
-    object-fit: cover;
-}
-
-.box .botton{
-    padding: 10px;
-    width:50%;
-    font-family: sans-serif;
-    text-align: center;
-    margin: 0px auto;
-    transition: .3s;
-    display: block;
-    position: relative;
-    z-index: 2;
-    font-weight: bold;
-}
-
-.boton1{
-    background-color: var(--color1);
-
-}
-.boton2{
-    background-color: var(--color2);
-}
-.boton3{
-    background-color: var(--color3);
-}
-
-
-.box p{
-    font-family: sans-serif;
-    text-align: center;
-    color: black;
-    font-weight: bolder;
-    text-shadow: -1px -1px 1px white, 1px -1px 1px white, -1px 1px 1px white, 1px 1px 1px white;
-    font-size: 20px;
-    width: 80%;
-    margin:30px auto;
-}
-.box:hover .botton{
-    transform: rotate(-10deg);
-}
-
-.boton {
-    padding: 10px;
-    width:50%;
-    font-family: sans-serif;
-    text-align: center;
-    margin: 0px auto;
-    transition: .3s;
-    display: block;
-    position: relative;
-    z-index: 2;
-    font-weight: bold;
-    
-}
-
-/*Guía de Suplementos*/
-
-.guia {
-    background: rgb(36, 35, 35);
-    text-align: center;
-    color: white;
-    font-size: 17px;
-}
-
-.guia h2 {
-    color: white;
-    font-weight: bold;
-    font-size: 28px;
-    display: block;
-    padding-top: 25px;
-    
-}
-
-.guia h3 {
-    color: #2596be;
-    font-size: 24px;
-}
-
-/*FOOTER*/
-
-footer {
-    background-color: #333;
-    color: white;
-    cursor: default;
-    height: 120px;
-    margin-top: 3px;
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.footer a:hover {
-    color: white;
-}
-
-.baja {
-    position: relative;
-    bottom: -25px;
-    text-decoration: none;
-    color: white;
-}
-/*
-.footer{
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-flow: row wrap;
-    padding: 50px;
-    color: white;
-    background-color: #3E403E;
-
-}
-
-.footer > *{
-    flex: 1 100%;
-}
-*/
-
-//probando sass
-

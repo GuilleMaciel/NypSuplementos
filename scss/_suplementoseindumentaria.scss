@@ -1,0 +1,92 @@
+/*Suplementos y indumentaria*/
+
+:root{
+    --color1:#2596be;
+    --color2:#2596be;
+    --color3:#2596be;
+}
+
+.box-cards{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    width: 100%;
+    height: 100vh;
+
+
+    .box {
+    background-color: rgb(138, 135, 135);
+    height: 500px;
+    width: 70%;
+    margin-top: 40px;
+    color: rgb(254, 254, 254);
+    }
+}
+
+.box {
+
+    img{
+        height: 450px;
+        width: 100%;
+        object-fit: cover;
+        }
+    
+        .botton{
+            padding: 10px;
+            width:50%;
+            font-family: sans-serif;
+            text-align: center;
+            margin: 0px auto;
+            transition: .3s;
+            display: block;
+            position: relative;
+            z-index: 2;
+            font-weight: bold;
+        }
+
+            p {
+                font-family: sans-serif;
+                text-align: center;
+                color: black;
+                font-weight: bolder;
+                text-shadow: -1px -1px 1px white, 1px -1px 1px white, -1px 1px 1px white, 1px 1px 1px white;
+                font-size: 20px;
+                width: 80%;
+                margin:30px auto;
+            }
+
+                :hover .botton{
+                    transform: rotate(-10deg);
+
+
+                    }
+                }
+
+
+.boton1{
+    background-color: var(--color1);
+
+}
+.boton2{
+    background-color: var(--color2);
+}
+.boton3{
+    background-color: var(--color3);
+}
+
+
+.boton {
+    padding: 10px;
+    width:50%;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0px auto;
+    transition: .3s;
+    display: block;
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    
+}
