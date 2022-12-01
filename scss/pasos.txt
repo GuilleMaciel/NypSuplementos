@@ -1,0 +1,17 @@
+1er-forma:
+
+paso 1: npm init
+paso 2: npm install -D node-sass nodemon
+paso 3: agregar despues de la linea test de scripts    ,"build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+paso 4: npm run watch-css
+
+2da-forma:
+
+paso 1: npm init
+paso 2: npm install -g sass
+paso 3: sass --watch scss:css
+                o
+        sass --watch scss/styles.scss css/styles.css
+                object
+        sass --watch scsscss:
