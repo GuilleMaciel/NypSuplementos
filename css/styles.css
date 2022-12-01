@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*Mixin*/
 /*Formulario de contacto*/
 .background-img .form-contact {
   display: flex;
@@ -128,7 +129,7 @@ footer a:hover {
   display: block;
   padding-top: 25px;
 }
-.guia h2 h3 {
+.guia h3 {
   color: #2596be;
   font-size: 24px;
 }
@@ -184,7 +185,7 @@ footer a:hover {
   width: 80%;
   margin: 30px auto;
 }
-.box :hover .botton {
+.box:hover .botton {
   transform: rotate(-10deg);
 }
 
@@ -258,7 +259,7 @@ img {
   padding-right: 30px;
   display: block;
 }
-#navbarNav li a :hover {
+#navbarNav li a:hover {
   background-color: #2596be;
   color: black;
 }
