@@ -135,75 +135,9 @@ footer a:hover {
 }
 
 /*Suplementos y indumentaria*/
-:root {
-  --color1:#2596be;
-  --color2:#2596be;
-  --color3:#2596be;
-}
-
-.box-cards {
-  height: 500px;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  background-color: #333;
-  width: 100%;
-  height: 100vh;
-}
-.box-cards .box {
-  background-color: rgb(138, 135, 135);
-  height: 500px;
-  width: 70%;
-  margin-top: 40px;
-  color: rgb(254, 254, 254);
-}
-
-.box img {
-  height: 450px;
-  width: 100%;
-  object-fit: cover;
-}
-.box .botton {
-  padding: 10px;
-  width: 50%;
-  font-family: sans-serif;
-  text-align: center;
-  margin: 0px auto;
-  transition: 0.3s;
-  display: block;
-  position: relative;
-  z-index: 2;
-  font-weight: bold;
-}
-.box p {
-  font-family: sans-serif;
-  text-align: center;
-  color: black;
-  font-weight: bolder;
-  text-shadow: -1px -1px 1px white, 1px -1px 1px white, -1px 1px 1px white, 1px 1px 1px white;
-  font-size: 20px;
-  width: 80%;
-  margin: 30px auto;
-}
-.box:hover .botton {
-  transform: rotate(-10deg);
-}
-
-.boton1 {
-  background-color: var(--color1);
-}
-
-.boton2 {
-  background-color: var(--color2);
-}
-
-.boton3 {
-  background-color: var(--color3);
-}
-
 .boton {
   padding: 10px;
-  width: 50%;
+  width: 70%;
   font-family: sans-serif;
   text-align: center;
   margin: 0px auto;
@@ -212,6 +146,38 @@ footer a:hover {
   position: relative;
   z-index: 2;
   font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.boton:hover {
+  transform: scale(1.1);
+}
+
+.card-title {
+  background-color: #2596be;
+  border-radius: 5px;
+  padding: 2px;
+  -webkit-text-fill-color: yellow;
+  -webkit-text-stroke: 1px white;
+}
+
+.card {
+  text-align: center;
+  background-color: rgb(61, 60, 60);
+}
+
+.card-text {
+  color: white;
+}
+
+h5 {
+  background-color: black;
+  transition: background-color 0.5s;
+  cursor: default;
+}
+
+h5:hover {
+  background-color: red;
 }
 
 /*CSS Principal*/
@@ -242,6 +208,22 @@ img {
   max-width: 100%;
 }
 
+.zoomealo {
+  transition: transform 0.2s;
+}
+
+.zoomealo:hover {
+  transform: scale(1.1);
+}
+
+.nav-link {
+  transition: transform 0.2s;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+}
+
 /*NavBar*/
 #navbarNav {
   display: flex;
@@ -269,7 +251,7 @@ img {
     position: fixed, top;
   }
   .collapse {
-    height: 160px;
+    height: 175px;
     margin-top: 50px;
     margin-bottom: 10px;
   }
@@ -341,15 +323,15 @@ img {
 }
 @media (max-width: 768px) {
   .contenedor {
-    line-height: 20px;
+    height: 300px;
   }
   .centrado {
     font-size: 20px;
-    top: 25px;
+    top: 35px;
   }
   .centrado-2 {
     font-size: 16px;
-    top: 59px;
+    top: 95px;
   }
   .centrado-3 {
     font-size: 14px;
@@ -359,11 +341,15 @@ img {
   }
 }
 @media (max-width: 576px) {
+  .contenedor {
+    height: 300px;
+  }
   .centrado {
     font-size: 18px;
   }
   .centrado-2 {
     font-size: 15px;
+    top: 85px;
   }
   .centrado-3 {
     font-size: 13px;

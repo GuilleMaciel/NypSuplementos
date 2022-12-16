@@ -39,6 +39,22 @@ img {
     max-width: 100%;
 }
 
+.zoomealo {
+    transition: transform .2s; 
+} 
+
+.zoomealo:hover {
+    transform: scale(1.1); 
+}
+
+.nav-link {
+    transition: transform .2s; 
+} 
+
+.nav-link:hover {
+    transform: scale(1.1)
+}
+
 
 
 /*NavBar*/
@@ -74,7 +90,7 @@ img {
     }
 
     .collapse {
-        height: 160px;
+        height: 175px;
         margin-top: 50px;
         margin-bottom: 10px;
     }
@@ -168,15 +184,15 @@ img {
 
 @media (max-width: 768px) {
     .contenedor {
-        line-height: 20px;
+        height: 300px;
     }
     .centrado {
         font-size: 20px;
-        top: 25px;
+        top: 35px;
     }
     .centrado-2 {
         font-size: 16px;
-        top: 59px;
+        top: 95px;
     }
     .centrado-3 {
         font-size: 14px;
@@ -186,14 +202,16 @@ img {
     }
 }
     
-
 @media (max-width: 576px) {
+    .contenedor {
+        height: 300px;
+    }
     .centrado {
         font-size: 18px;
     }
     .centrado-2 {
         font-size: 15px;
-        
+        top: 85px;
     }
     .centrado-3 {
         font-size: 13px;
